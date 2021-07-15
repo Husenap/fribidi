@@ -41,4 +41,4 @@ set(src_fribidi
 add_library(fribidi STATIC ${src_fribidi})
 
 target_include_directories(fribidi SYSTEM PUBLIC "${fribidi_SOURCE_DIR}/lib")
-target_compile_definitions(fribidi PRIVATE -DDONT_HAVE_FRIBIDI_CONFIG_H -DHAVE_STRINGIZE -DFRIBIDI_LIB_STATIC)
+target_compile_definitions(fribidi INTERFACE -DDONT_HAVE_FRIBIDI_CONFIG_H -DHAVE_STRINGIZE -DFRIBIDI_LIB_STATIC)
