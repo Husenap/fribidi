@@ -41,4 +41,4 @@ set(src_fribidi
 add_library(fribidi STATIC ${src_fribidi})
 
 target_include_directories(fribidi PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/lib")
-target_compile_definitions(fribidi PUBLIC -DDONT_HAVE_FRIBIDI_CONFIG_H -DHAVE_STRINGIZE -DFRIBIDI_LIB_STATIC)
+target_compile_definitions(fribidi PUBLIC -DDONT_HAVE_FRIBIDI_CONFIG_H -DHAVE_STRINGIZE -DFRIBIDI_LIB_STATIC -DHAVE_STDLIB_H)
